@@ -1,0 +1,3 @@
+[submodule "BetterDiscord/.config/BetterDiscord/plugins"]
+	path = BetterDiscord/.config/BetterDiscord/plugins
+	url = git@github.com:D-Card/betterdiscord-plugins.git

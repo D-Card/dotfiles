@@ -1,0 +1,21 @@
+{
+    "BDFDB": true,
+    "ZeresPluginLibrary": true,
+    "XenoLib": true,
+    "HideDisabledEmojis": true,
+    "ImageUtilities": true,
+    "JoinedAtDate": true,
+    "MemberCount": true,
+    "MessageLoggerV2": true,
+    "PermissionsViewer": true,
+    "PinDMs": true,
+    "ShowHiddenChannels": true,
+    "TopRoleEverywhere": true,
+    "TypingIndicator": true,
+    "CompleteTimestamps": true,
+    "NoSpotifyPause": true,
+    "OpenSteamLinksInApp": true,
+    "PersonalPins": true,
+    "ServerCounter": true,
+    "SplitLargeMessages": true
+}

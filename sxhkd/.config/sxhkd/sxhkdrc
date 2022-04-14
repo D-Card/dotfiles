@@ -1,0 +1,17 @@
+super + shift + S
+	flameshot gui
+XF86AudioMute
+	pulsemixer --toggle-mute 
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +5 
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5 
+XF86AudioMicMute
+	amixer set Capture toggle 
+XF86MonBrightnessDown
+	brightnessctl s 5%-
+XF86MonBrightnessUp
+	brightnessctl s +5%
+XF86Display
+XF86WLAN
+XF86Favorites
