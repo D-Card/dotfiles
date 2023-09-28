@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   services.xserver = {
     enable = true;
-    layout = "us-intl";
+    layout = "us";
     displayManager = {
       defaultSession = "user-xsession";
       session = [
@@ -9,7 +9,7 @@
           name = "user-xsession";
           manage = "desktop";
           start = ''
-            exec $HOME/.xsession
+            exec i3
           '';
         }
       ];
@@ -59,10 +59,10 @@
   security.rtkit.enable = true;
 
   services = {
-    picom = {
-      enable = true;
-      vSync = true;
-    };
+    #picom = {
+    #  enable = true;
+    #  vSync = true;
+    #};
     redshift = {
       enable = true;
       temperature = {
@@ -73,9 +73,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    alacratty
+    alacritty
     arandr
     brave
+    vscode-fhs
     (discord.override {
       withOpenASAR = true; # less tracking and faster loading
     })

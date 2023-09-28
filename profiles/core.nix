@@ -28,11 +28,13 @@
   environment = {
     systemPackages = with pkgs; [
       # Editors
+      neovim
 
       # Networking
       whois
 
       # Misc
+      tmux
       curl
       git
       lsof
@@ -41,7 +43,7 @@
       neofetch
     ];
   };
-
+  boot.supportedFilesystems = [ "zfs" ];
   boot.loader = {
     systemd-boot.enable = true;
     systemd-boot.editor = false;

@@ -4,6 +4,7 @@
     graphical
     rnl
     ssh-server
+    ./hardware-configuration.nix
   ];
 
   # Networking
@@ -44,4 +45,12 @@
       };
     };
   };
+
+  location = {
+    provider = "manual";
+    latitude = 38.43;
+    longitude = -9.8;
+  };
+
+  system.stateVersion = "23.05";
 }
